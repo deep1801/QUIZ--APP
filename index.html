@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ APP - AYUSH MISHRA</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>  
+    <main>
+        <div class="instruction">
+            <h3 class="heading">QUIZZIFY</h3>
+            <h3>READ INSTRUCTION:-</h3>
+            <h3>+5 MARKS FOR CORRECT ANSWER</h3>
+            <h3>NO MINUS POINTS</h3>
+            <h3>There will be 10 question given</h3>
+            <h3>CLICK submit for submission</h3>
+           <button id="start">START</button>
+        </div>
+        <div class="quiz">
+         
+            <div class="paper">
+                <div class="question">
+                    <p id="qno"></p>        <p id="que"></p>
+                </div>
+                <div class="option">
+                 <p class="opt"  id="op1"></p>
+                 <p class="opt"  id="op2"></p>
+                 <p class="opt"  id="op3"></p>
+                 <p class="opt"  id="op4"></p>
+                </div>  
+            </div>
+            <div class="btn">  
+                  <button id="prev">Prev</button>
+              <button id="next">Next</button>
+            </div>
+            <button id="submit">SUBMIT</button>
+             <p id="score"></p>
+        </div>
+    </main>
+</body>
+<script src="./script.js"></script>
+<!-- <script>
+    const ques=[
+        {
+        que:"what is java",
+        a:"java",
+        b:"cpp"
+        },
+        {
+            que:"ayush is goog",
+            a:"yes",
+            b:"no"
+        }
+
+    ]
+    const q=document.querySelector('#que')
+    const op1=document.querySelector('#op1')
+    const op2=document.querySelector('#op2')
+    const next=document.querySelector('#next')
+    let i=-1
+    document.querySelector('#next').addEventListener("click",function(){
+        i++
+        q.innerHTML=ques[i].que
+        op1.innerHTML=ques[i].a
+        op2.innerHTML=ques[i].b
+    })
+</script> -->
+</html>
